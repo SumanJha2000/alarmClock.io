@@ -26,7 +26,7 @@ var clear_all = document.getElementById("clear_all");
 
 //Array to all Alarms Set By User
 var alarmList = [];
-alarmList.push(...JSON.parse(localStorage.parse('alarms')));
+alarmList.push(...JSON.parse(localStorage('alarms')));
 
 if (alarmList.length != 0) {
     no_alarm.classList.remove('invisible');
