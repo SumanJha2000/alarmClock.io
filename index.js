@@ -122,7 +122,7 @@ alarm_list_container.addEventListener('click', function deleteAlarm(e) {
         var v = parseInt(e.target.parentElement.children[0].innerText);
         e.target.parentElement.parentElement.remove();
         removeAlarm(v);
-        alert("Alarm Removed Successfully");
+
     }
 });
 
