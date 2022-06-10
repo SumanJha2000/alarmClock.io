@@ -7,8 +7,8 @@ var audio = new Audio("assets/alarm.mp3");
 audio.loop = true;
 
 //localList to fetch from  local storage at the beginnning
-var localList = [];
-localList.push(...JSON.parse(localStorage.getItem('alarms')));
+// var localList = [];
+// localList.push(...JSON.parse(localStorage.getItem('alarms')));
 
 //Getting variables to use;
 var container = document.getElementById("container");
@@ -26,9 +26,7 @@ var clear_all = document.getElementById("clear_all");
 
 //Array to all Alarms Set By User
 var alarmList = [];
-if (localList.length != 0) {
-    alarmList.push(...localList);
-}
+alarmList.push(...JSON.parse(localStorage.parse('alarms')));
 
 if (alarmList.length != 0) {
     no_alarm.classList.remove('invisible');
