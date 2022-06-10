@@ -54,7 +54,7 @@ function clock() {
         if (alarmList.includes(current_time.innerText)) {
             ringAlarm(current_time.innerText);
             alarmList = alarmList.filter(v => v != current_time.innerText);
-            localStorage.setItem('alarms', JSON.stringify(alarmList));
+            // localStorage.setItem('alarms', JSON.stringify(alarmList));
             removeAlarm(current_time.innerText);
             displayNewAlarms()
         }
