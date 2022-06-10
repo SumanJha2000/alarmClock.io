@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <!-- clock icon -->
+        <h1 id="clock_icon">
+            Alarm Cl&nbsp;<i class="fa fa-clock-o fa-spin fa-2x"></i>&nbspck
+        </h1>
+        <!-- <h1><img src="assets/download.png" /></h1> -->
+
+        <!-- display current time -->
+        <div id="clock"></div>
+        <h1>Set Alarm</h1>
+
+        <!-- set alarms -->
+        <div id="setAlarm">
+            <div id="input_div">
+                <input class="time" placeholder="HH" type="number" min="0" max="12" id="hour">
+                <input class="time" placeholder="MM" type="number" min="0" max="59" id="minute">
+                <input class="time" placeholder="SS" type="number" min="0" max="59" id="second">
+                <form class="form">
+                    <input type="radio" id="am" name="language" checked="checked" value="AM">
+                    <label for="html">AM</label><br>
+                    <input type="radio" id="pm" name="language" value="PM">
+                    <label for="css">PM</label><br>
+                </form>
+            </div>
+            <!-- button for set and stop ringing -->
+            <div id="set_container">
+                <!-- to save alarm -->
+                <button id="set">Set</button>
+                <!-- to stop ringing alarm -->
+                <button id="stop">Stop</button>
+            </div>
+        </div>
+
+        <div id="alarm_list_head">
+            <h2 id="no_alarm" class="invisible">Alarms</h2>
+            <button id="clear_all" class="invisible">Clear All</button>
+        </div>
+        <!-- container for alarms saved -->
+        <div id="alarm_list_container">
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/1a6329599f.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
