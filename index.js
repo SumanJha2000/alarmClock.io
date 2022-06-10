@@ -26,13 +26,13 @@ var clear_all = document.getElementById("clear_all");
 
 //Array to all Alarms Set By User
 var alarmList = [];
-alarmList.push(...JSON.parse(localStorage.getItem('alarms')));
+// alarmList.push(...JSON.parse(localStorage.getItem('alarms')));
 
-if (alarmList.length != 0) {
-    no_alarm.classList.remove('invisible');
-    clear_all.classList.remove('invisible');
-}
-displayNewAlarms();
+// if (alarmList.length != 0) {
+//     no_alarm.classList.remove('invisible');
+//     clear_all.classList.remove('invisible');
+// }
+// displayNewAlarms();
 
 //To have Clock current and actual time and update time at every Second;
 setInterval(clock, 1000);
@@ -96,7 +96,7 @@ function setAlarm(e) {
 
     //If the time set is valid
     alarmList.push(str);
-    localStorage.setItem('alarms', JSON.stringify(alarmList));
+    // localStorage.setItem('alarms', JSON.stringify(alarmList));
     displayAlarms(str);
     no_alarm.classList.remove('invisible');
     clear_all.classList.remove('invisible');
@@ -130,7 +130,7 @@ alarm_list_container.addEventListener('click', function deleteAlarm(e) {
 //Remove selected alarm from alarmList array
 function removeAlarm(v) {
     alarmList = alarmList.filter(value => value != v);
-    localStorage.setItem('alarms', JSON.stringify(alarmList));
+    // localStorage.setItem('alarms', JSON.stringify(alarmList));
     if (alarmList.length == 0) {
         no_alarm.classList.add("invisible");
         clear_all.classList.add('invisible');
@@ -162,7 +162,7 @@ function setAlarmFail(str) {
 clear_all.addEventListener('click', clearAll);
 function clearAll() {
     alarmList = [];
-    localStorage.setItem('alarms', JSON.stringify(alarmList));
+    // localStorage.setItem('alarms', JSON.stringify(alarmList));
     displayNewAlarms();
     if (alarmList == 0) {
         no_alarm.classList.add('invisible');
