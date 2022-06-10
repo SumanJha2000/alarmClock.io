@@ -8,7 +8,7 @@ audio.loop = true;
 
 //localList to fetch from  local storage at the beginnning
 var localList = [];
-localList = JSON.parse(localStorage.getItem('alarms'));
+localList.push(...JSON.parse(localStorage.getItem('alarms')));
 
 //Getting variables to use;
 var container = document.getElementById("container");
