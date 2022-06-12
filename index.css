@@ -348,13 +348,13 @@ button{
 h1{
     margin-top:3rem;
     box-sizing: border-box;
-    font-size: 10rem !important;
+    font-size: 1vmin !important;
 
 }
 
 #clock_icon{
     font-size: 5vmin !important;
-    height:5%;
+    /* height:5%; */
 }
 
 /* animation for clock icon at the top on ringing */
@@ -378,7 +378,7 @@ h1{
 #clock{
     height:13%;
     width:80%;
-    font-size: 12vmin;
+    font-size: 10vmin !important;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -405,8 +405,8 @@ h1{
 
 #setAlarm h1{
     font-size:6vmin !important;
-    margin:0;
-    height:20%;
+    /* margin:0;
+    height:20%; */
 }
 
 #input_div{
@@ -467,7 +467,7 @@ label{
     border:1px solid white;
     font-weight: bold;
     transition:all .2s ease;
-    font-size: 4vmin !important;
+    font-size: 3vmin !important;
 }
 
 #set:hover{
@@ -566,9 +566,9 @@ button{
     color:white;;
     cursor:pointer;
     border-radius:10px;
-    height:80%;
+    /* height:80%; */
     width:30%;
-    font-size:7vmin;
+    font-size:5vmin !important;
     transition:all .3s ease;
     margin:0;
 }
