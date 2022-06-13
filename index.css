@@ -3,11 +3,11 @@
     font-family:Arial, Helvetica, sans-serif;
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 :root{
-    font-size:62.5%;
-    box-sizing: border-box; 
+    font-size:62.5%; 
 }
 
 /*main container */
@@ -272,29 +272,7 @@ button{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*MEDIA QUERY*/
+/*MEDIA QUERY SCREEN 1000PX*/
 
 
 @media  screen and (max-width:1000px){
@@ -307,7 +285,7 @@ button{
     }
 
     /*main container */
-#container{
+    #container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -585,9 +563,6 @@ button{
 #no_alarm{
     font-size:7vmin !important;
 }
-
-
-    
 }
     
 
